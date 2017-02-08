@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="empHelper.Pages.Login">
+
+  <StackLayout>
+    <Button Text="Login" VerticalOptions="Start"
+                 WidthRequest="80" x:Name="btnLogin" HorizontalOptions="Center" Clicked="loginClicked" TextColor="White"  />
+    <Button Text="Enter" VerticalOptions="Start"
+            WidthRequest="80" x:Name="btnEnter" IsVisible="false"
+        HorizontalOptions="Center" Clicked="goPortalClicked"
+             TextColor="White" />
+  </StackLayout>
+</ContentPage>
