@@ -1,0 +1,86 @@
+iOS Simulator system.log
+-----------------------------------------------------------------
+Feb 14 14:48:43 NTHCMac01-Mac-mini kbd[3932]: DEBUG:ProactiveQuickType:IC: Searching for Connections prediction with request: (null)
+Feb 14 14:48:43 NTHCMac01-Mac-mini kbd[3932]: DEBUG:ProactiveQuickType:IC: received prediction source results, count = 1, elapsed = 0.007987 msec
+Feb 14 14:48:45 NTHCMac01-Mac-mini pasted[2673]: SecTaskLoadEntitlements failed error=22 cs_flags=200, task->pid_self=-1
+Feb 14 14:48:45 NTHCMac01-Mac-mini pasted[2673]: SecTaskCopyDebugDescription: HelperAPPiOS[9096]/0#-1 LF=0
+Feb 14 14:48:45 NTHCMac01-Mac-mini pasted[2673]: SecTaskLoadEntitlements failed error=22 cs_flags=200, task->pid_self=-1
+Feb 14 14:48:45 NTHCMac01-Mac-mini pasted[2673]: SecTaskCopyDebugDescription: HelperAPPiOS[9096]/0#-1 LF=0
+Feb 14 14:48:45 NTHCMac01-Mac-mini pasted[2673]: BundleID com.nuvoton.empHelp from team (null) is requesting pasteboard com.apple.UIKit.pboard.general
+Feb 14 14:48:45 NTHCMac01-Mac-mini pasted[2673]: ...requesting pasteboard com.apple.UIKit.pboard.general completed. Error: (null)
+Feb 14 14:48:46 NTHCMac01-Mac-mini pasted[2673]: SecTaskLoadEntitlements failed error=22 cs_flags=200, task->pid_self=-1
+Feb 14 14:48:46 NTHCMac01-Mac-mini pasted[2673]: SecTaskCopyDebugDescription: HelperAPPiOS[9096]/0#-1 LF=0
+Feb 14 14:48:46 NTHCMac01-Mac-mini pasted[2673]: SecTaskLoadEntitlements failed error=22 cs_flags=200, task->pid_self=-1
+Feb 14 14:48:46 NTHCMac01-Mac-mini pasted[2673]: SecTaskCopyDebugDescription: HelperAPPiOS[9096]/0#-1 LF=0
+Feb 14 14:48:46 NTHCMac01-Mac-mini pasted[2673]: Bundle ID com.nuvoton.empHelp from team (null) is requesting item 0 of type public.text from pasteboard named com.apple.UIKit.pboard.general with UUID 3FE2A323-B5A1-4B2D-BC15-A42710822CF9
+Feb 14 14:48:46 NTHCMac01-Mac-mini pasted[2673]: Loading item 0x7fe6db508250 766B7C3C-882D-4647-8131-F230C70B86DF type public.text from URL file:///Users/nthcmac01/Library/Developer/CoreSimulator/Devices/D74783B7-2BF4-4E64-B8DA-DDE130B2DE40/data/Library/Caches/com.apple.Pasteboard/eb77e5f8f043896faf63b5041f0fbd121db984dd/0776398cdbb74c21058727ec39ac5e7abe86e3de
+Feb 14 14:48:46 NTHCMac01-Mac-mini pasted[2673]: ...item request completed. Error: (null)
+Feb 14 14:48:51 NTHCMac01-Mac-mini HelperAPPiOS[9096]: [] nw_host_stats_add_src recv too small, received 24, expected 28
+Feb 14 14:48:51 NTHCMac01-Mac-mini HelperAPPiOS[9096]: [] __nwlog_err_simulate_crash simulate crash already simulated "nw_socket_set_common_sockopts setsockopt SO_NOAPNFALLBK failed: [42] Protocol not available"
+Feb 14 14:48:51 NTHCMac01-Mac-mini HelperAPPiOS[9096]: [] nw_socket_set_common_sockopts setsockopt SO_NOAPNFALLBK failed: [42] Protocol not available, dumping backtrace:
+	        [x86_64] libnetcore-856.30.16
+	    0   libsystem_network.dylib             0x000000011a3c1666 __nw_create_backtrace_string + 123
+	    1   libnetwork.dylib                    0x000000011aaf5006 nw_socket_add_input_handler + 3164
+	    2   libnetwork.dylib                    0x000000011aad2555 nw_endpoint_flow_attach_protocols + 3768
+	    3   libnetwork.dylib                    0x000000011aad1572 nw_endpoint_flow_setup_socket + 563
+	    4   libnetwork.dylib                    0x000000011aad0298 -[NWConcrete_nw_endpoint_flow startWithHandler:] + 2612
+	    5   libnetwork.dylib                    0x000000011aaebae1 nw_endpoint_handler_path_change + 1261
+	    6   libnetwork.dylib                    0x000000011aaeb510 nw_endpoint_handler_start + 570
+	    7   libnetwork.dylib                    0x000000011ab031f9 nw_endpoint_resolver_start_next_child + 2240
+	    8   libdispatch.dylib                   0x0000
+Feb 14 14:48:51 NTHCMac01-Mac-mini securityd[2671]: SecTaskLoadEntitlements failed error=22 cs_flags=200, task->pid_self=-1
+Feb 14 14:48:51 NTHCMac01-Mac-mini securityd[2671]: SecTaskCopyDebugDescription: HelperAPPiOS[9096]/0#-1 LF=0
+Feb 14 14:48:51 NTHCMac01-Mac-mini securityd[2671]: [] nw_host_stats_add_src recv too small, received 24, expected 28
+Feb 14 14:48:51 NTHCMac01-Mac-mini securityd[2671]: [] ____nwlog_simulate_crash_inner_block_invoke dlopen CrashReporterSupport failed
+Feb 14 14:48:51 NTHCMac01-Mac-mini securityd[2671]: [] __nwlog_err_simulate_crash simulate crash failed "nw_socket_set_common_sockopts setsockopt SO_NOAPNFALLBK failed: [42] Protocol not available"
+Feb 14 14:48:51 NTHCMac01-Mac-mini securityd[2671]: [] nw_socket_set_common_sockopts setsockopt SO_NOAPNFALLBK failed: [42] Protocol not available, dumping backtrace:
+	        [x86_64] libnetcore-856.30.16
+	    0   libsystem_network.dylib             0x000000010d1d0666 __nw_create_backtrace_string + 123
+	    1   libnetwork.dylib                    0x000000010d6dd006 nw_socket_add_input_handler + 3164
+	    2   libnetwork.dylib                    0x000000010d6ba555 nw_endpoint_flow_attach_protocols + 3768
+	    3   libnetwork.dylib                    0x000000010d6b9572 nw_endpoint_flow_setup_socket + 563
+	    4   libnetwork.dylib                    0x000000010d6b8298 -[NWConcrete_nw_endpoint_flow startWithHandler:] + 2612
+	    5   libnetwork.dylib                    0x000000010d6d3ae1 nw_endpoint_handler_path_change + 1261
+	    6   libnetwork.dylib                    0x000000010d6d3510 nw_endpoint_handler_start + 570
+	    7   libnetwork.dylib                    0x000000010d6eb1f9 nw_endpoint_resolver_start_next_child + 2240
+	    8   libdispatch.dylib                   0x0000
+Feb 14 14:49:12 NTHCMac01-Mac-mini HelperAPPiOS[9096]: [] nw_host_stats_add_src recv too small, received 24, expected 28
+Feb 14 14:49:12 --- last message repeated 2 times ---
+Feb 14 14:49:12 NTHCMac01-Mac-mini securityd[2671]: SecTaskLoadEntitlements failed error=22 cs_flags=200, task->pid_self=-1
+Feb 14 14:49:12 NTHCMac01-Mac-mini securityd[2671]: SecTaskCopyDebugDescription: HelperAPPiOS[9096]/0#-1 LF=0
+Feb 14 14:49:12 NTHCMac01-Mac-mini securityd[2671]: SecTaskLoadEntitlements failed error=22 cs_flags=200, task->pid_self=-1
+Feb 14 14:49:12 NTHCMac01-Mac-mini securityd[2671]: SecTaskCopyDebugDescription: HelperAPPiOS[9096]/0#-1 LF=0
+Feb 14 14:49:12 NTHCMac01-Mac-mini HelperAPPiOS[9096]: 2/14/2017 6:49:12 AM: a7408a91-a07a-4fe6-8efc-24a5dd142edd - TokenCache.cs: Storing token in the cache...
+Feb 14 14:49:12 NTHCMac01-Mac-mini HelperAPPiOS[9096]: 2/14/2017 6:49:12 AM: a7408a91-a07a-4fe6-8efc-24a5dd142edd - TokenCache.cs: An item was stored in the cache
+Feb 14 14:49:12 NTHCMac01-Mac-mini HelperAPPiOS[9096]: 2/14/2017 6:49:12 AM: a7408a91-a07a-4fe6-8efc-24a5dd142edd - AcquireTokenHandlerBase.cs: === Token Acquisition finished successfully. An access token was retuned:
+		Access Token Hash: fsqkbNjFZnulnkfqOtZCbwxJiuDpySYFBRi0F9ngaOk=
+		Expiration Time: 2/14/2017 7:49:11 AM +00:00
+		User Hash: TbudZ6uP6SrXSDr7ueUtTQf9MjCfdLDy1OSbxOjF+6k=
+		
+Feb 14 14:49:12 NTHCMac01-Mac-mini securityd[2671]: SecTaskLoadEntitlements failed error=22 cs_flags=200, task->pid_self=-1
+Feb 14 14:49:12 NTHCMac01-Mac-mini securityd[2671]: SecTaskCopyDebugDescription: HelperAPPiOS[9096]/0#-1 LF=0
+Feb 14 14:49:12 NTHCMac01-Mac-mini securityd[2671]: found no keychain client entitlements. task=HelperAPPiOS[9096]/1#-1 LF=22 procid=(null) cs_flags=0x00000200
+Feb 14 14:49:12 NTHCMac01-Mac-mini HelperAPPiOS[9096]: 2/14/2017 6:49:12 AM:  - TokenCachePlugin.cs: Failed to remove cache record: -34018
+Feb 14 14:49:12 NTHCMac01-Mac-mini HelperAPPiOS[9096]: 2/14/2017 6:49:12 AM:  - TokenCache.cs: Serializing token cache with 1 items.
+Feb 14 14:49:12 NTHCMac01-Mac-mini securityd[2671]: SecTaskLoadEntitlements failed error=22 cs_flags=200, task->pid_self=-1
+Feb 14 14:49:12 NTHCMac01-Mac-mini securityd[2671]: SecTaskCopyDebugDescription: HelperAPPiOS[9096]/0#-1 LF=0
+Feb 14 14:49:12 NTHCMac01-Mac-mini securityd[2671]: found no keychain client entitlements. task=HelperAPPiOS[9096]/1#-1 LF=22 procid=(null) cs_flags=0x00000200
+Feb 14 14:49:12 NTHCMac01-Mac-mini HelperAPPiOS[9096]: 2/14/2017 6:49:12 AM:  - TokenCachePlugin.cs: Failed to save cache record: -34018
+Feb 14 14:49:12 NTHCMac01-Mac-mini HelperAPPiOS[9096]: preferred language:en
+Feb 14 14:49:12 --- last message repeated 4 times ---
+Feb 14 14:49:12 NTHCMac01-Mac-mini securityd[2671]: SecTaskLoadEntitlements failed error=22 cs_flags=200, task->pid_self=-1
+Feb 14 14:49:12 NTHCMac01-Mac-mini securityd[2671]: SecTaskCopyDebugDescription: HelperAPPiOS[9096]/0#-1 LF=0
+Feb 14 14:49:12 NTHCMac01-Mac-mini securityd[2671]: SecTaskLoadEntitlements failed error=22 cs_flags=200, task->pid_self=-1
+Feb 14 14:49:12 NTHCMac01-Mac-mini securityd[2671]: SecTaskCopyDebugDescription: HelperAPPiOS[9096]/0#-1 LF=0
+Feb 14 14:49:12 NTHCMac01-Mac-mini securityd[2671]: SecTaskLoadEntitlements failed error=22 cs_flags=200, task->pid_self=-1
+Feb 14 14:49:12 NTHCMac01-Mac-mini securityd[2671]: SecTaskCopyDebugDescription: HelperAPPiOS[9096]/0#-1 LF=0
+Feb 14 14:49:12 NTHCMac01-Mac-mini securityd[2671]: SecTaskLoadEntitlements failed error=22 cs_flags=200, task->pid_self=-1
+Feb 14 14:49:12 NTHCMac01-Mac-mini securityd[2671]: SecTaskCopyDebugDescription: HelperAPPiOS[9096]/0#-1 LF=0
+Feb 14 14:49:12 NTHCMac01-Mac-mini SpringBoard[2646]: [KeyboardArbiter] HW kbd: Failed to set (null) as keyboard focus
+Feb 14 14:49:12 NTHCMac01-Mac-mini com.apple.CoreSimulator.SimDevice.D74783B7-2BF4-4E64-B8DA-DDE130B2DE40.launchd_sim[2629] (UIKitApplication:com.nuvoton.empHelper[0x871f][9096]): Service exited due to Abort trap: 6
+Feb 14 14:49:12 NTHCMac01-Mac-mini backboardd[2647]: [Common] Unable to get short BSD proc info for 9096: No such process
+Feb 14 14:49:12 NTHCMac01-Mac-mini backboardd[2647]: [Common] Unable to get proc info for 9096: No such process
+Feb 14 14:49:12 NTHCMac01-Mac-mini assertiond[2650]: notify_suspend_pid() failed with error 7
+Feb 14 14:49:35 NTHCMac01-Mac-mini routined[2635]: CoreLocation: Error occurred while trying to retrieve motion state update: CMErrorDomain Code:104
+ 
+-----------------------------------------------------------------
